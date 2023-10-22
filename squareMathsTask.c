@@ -52,8 +52,14 @@ printf("-----------------------------------\n");
 
 
 // Berechnung der Seite a
-long double a = (sqrt((ergebniss * ergebniss) + (J * J)) + sqrt((E * E) + (Abziehwert * Abziehwert)) );
-printf("Länge a = %Lf (Einheit)\n", a);
+long double Diagonale = (sqrt((ergebniss * ergebniss) + (J * J)) + sqrt((E * E) + (Abziehwert * Abziehwert)) );
+printf("Länge Diagonale = %Lf (Einheit)\n", Diagonale);
+printf("-----------------------------------\n");
+
+long double Wbogenmaß = ((45 * M_PI) / 180);
+long double kosW = cos(Wbogenmaß);
+long double a = (Diagonale * kosW);
+printf("Seite a = %Lf (Einheit)\n", a); 
 printf("-----------------------------------\n");
 
 // Gesammtvolumen Quadrat /////////////////////////////////////////////////////////////////////////////////////// !!!!!WICHTIG!!!!!! /////////////////////////////////////////
